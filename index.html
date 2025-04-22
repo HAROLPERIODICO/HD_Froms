@@ -103,10 +103,7 @@
     <div class="modal-content">
       <span class="close" onclick="document.getElementById('formModal').style.display='none'">&times;</span>
       <h1>Formulario de Briefing para Página Web</h1>
-      <form id="briefingForm" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
-        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
-        <input type="hidden" name="_subject" value="Nuevo Briefing Web">
-
+      <form id="briefingForm">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -159,6 +156,19 @@
         modal.style.display = "none";
       }
     }
+
+    document.getElementById("briefingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const savedData = {};
+      formData.forEach((value, key) => {
+        savedData[key] = value;
+      });
+      localStorage.setItem("briefingData", JSON.stringify(savedData));
+      alert("Datos guardados localmente (solo visibles en este navegador).");
+      this.reset();
+      document.getElementById('formModal').style.display = 'none';
+    });
   </script>
 
 </body>
