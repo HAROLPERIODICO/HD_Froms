@@ -13,32 +13,7 @@
       margin: auto;
       text-align: center;
     }
-    .open-modal-btn {
-      background-color: #3498db;
-      color: white;
-      font-size: 18px;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .open-modal-btn:hover {
-      background-color: #2c80b4;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.7);
-      padding: 40px 10px;
-    }
-    .modal-content {
+    .form-container {
       background: white;
       border-radius: 16px;
       padding: 30px;
@@ -47,48 +22,144 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       animation: fadeIn 0.3s ease-in-out;
     }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
+    h1 {
+      margin-bottom: 20px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: left;
+    }
+    .form-group {
+      position: relative;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 12px 12px 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: none;
+    }
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 14px;
+      color: #888;
+      background: white;
+      padding: 0 5px;
+      transition: 0.2s;
+      pointer-events: none;
+    }
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label,
+    .form-group select:focus + label,
+    .form-group select:not([value=""]):valid + label {
+      top: -8px;
+      left: 10px;
+      background: white;
+      font-size: 12px;
+      color: #3498db;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .full-width {
+      grid-column: 1 / -1;
+    }
+    button[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+      font-size: 18px;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
+      grid-column: 1 / -1;
     }
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    button[type="submit"]:hover {
+      background-color: #27ae60;
     }
   </style>
 </head>
 <body>
 
-  <button class="open-modal-btn" onclick="document.getElementById('formModal').style.display='block'">Completar Briefing</button>
+  <div class="form-container">
+    <h1>Formulario de Briefing para Página Web</h1>
+    <form id="briefingForm" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <input type="hidden" name="_subject" value="Nuevo Briefing Web">
 
-  <div id="formModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="document.getElementById('formModal').style.display='none'">&times;</span>
-      <h1>Formulario de Briefing para Página Web</h1>
-      <!-- AQUI PEGA TODO EL FORMULARIO -->
-      <form>
-        <!-- ... todo el contenido del formulario original ... -->
-      </form>
-    </div>
+      <div class="form-group">
+        <input type="text" id="nombre" name="nombre" required placeholder=" ">
+        <label for="nombre">Nombre</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" ">
+        <label for="email">Correo electrónico</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="dedicacion" name="dedicacion" rows="3" placeholder=" "></textarea>
+        <label for="dedicacion">¿A qué se dedica?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="objetivo" name="objetivo" rows="3" placeholder=" "></textarea>
+        <label for="objetivo">¿Qué quieres lograr con tu página web?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="accionVisitante" name="accionVisitante" rows="3" placeholder=" "></textarea>
+        <label for="accionVisitante">¿Qué te gustaría que hicieran los visitantes cuando entren a tu web?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="secciones" name="secciones" rows="3" placeholder=" "></textarea>
+        <label for="secciones">¿Qué secciones quieres que tenga la web?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="material" name="material" rows="3" placeholder=" "></textarea>
+        <label for="material">¿Ya tienes los textos, imágenes y logotipo?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <select id="funcionalidades" name="funcionalidades" multiple>
+          <option value="">Selecciona funcionalidades</option>
+          <option>Formulario de contacto</option>
+          <option>WhatsApp</option>
+          <option>Mapa de ubicación</option>
+          <option>Blog o sección de noticias</option>
+          <option>Tienda online / carrito de compras</option>
+          <option>Reservas o citas</option>
+          <option>Galería de imágenes</option>
+        </select>
+        <label for="funcionalidades">🛠️ Funcionalidades</label>
+      </div>
+
+      <div class="form-group full-width">
+        <select id="extras" name="extras" multiple>
+          <option value="">Selecciona extras</option>
+          <option>Posicionamiento en Google (SEO)</option>
+          <option>Google Analytics</option>
+          <option>Traducción a varios idiomas</option>
+          <option>Creación de correos corporativos</option>
+        </select>
+        <label for="extras">🔍 Extras</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
   </div>
-
-  <script>
-    // Cierra modal si el usuario hace clic fuera del contenido
-    window.onclick = function(event) {
-      const modal = document.getElementById('formModal');
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
 </body>
 </html>
