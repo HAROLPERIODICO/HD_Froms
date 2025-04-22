@@ -105,16 +105,10 @@
     button[type="submit"]:hover {
       background-color: #8e44ad;
     }
-    select[multiple] {
-      height: auto;
-      padding: 12px 16px;
-      background-color: #f9f9f9;
-      border-radius: 15px;
-      border: 1px solid #e0e0e0;
-    }
-    select[multiple]:focus {
-      border-color: #9b59b6;
-      box-shadow: 0 0 10px rgba(155, 89, 182, 0.4);
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 400;
     }
   </style>
 </head>
@@ -138,26 +132,24 @@
 
       <div class="form-group full-width">
         <textarea id="dedicacion" name="dedicacion" rows="3" placeholder=" "></textarea>
-        <label for="dedicacion">🧭 ¿A qué se dedica tu negocio o proyecto? Describe brevemente tu actividad. También puedes seleccionar una categoría:</label>
+        <label for="dedicacion">🧭 ¿A qué se dedica tu negocio o proyecto? Describe brevemente tu actividad.</label>
       </div>
 
-      <div class="form-group full-width">
-        <select id="categorias" name="categorias[]" multiple>
-          <option>Comercio / Tienda física o en línea</option>
-          <option>Servicios profesionales</option>
-          <option>Salud y bienestar</option>
-          <option>Belleza y estética</option>
-          <option>Educación o formación</option>
-          <option>Gastronomía</option>
-          <option>Arte y creatividad</option>
-          <option>Eventos y entretenimiento</option>
-          <option>Turismo y alojamiento</option>
-          <option>Tecnología / Software / Aplicaciones</option>
-          <option>ONG / Proyecto social o comunitario</option>
-          <option>Marca personal / Influencer / Creador de contenido</option>
-          <option>Otro</option>
-        </select>
-        <label for="categorias">Selecciona una o varias categorías</label>
+      <div class="form-group full-width checkbox-group">
+        <label>Selecciona una o varias categorías:</label>
+        <label><input type="checkbox" name="categorias[]" value="Comercio"> Comercio / Tienda física o en línea</label>
+        <label><input type="checkbox" name="categorias[]" value="Servicios profesionales"> Servicios profesionales</label>
+        <label><input type="checkbox" name="categorias[]" value="Salud"> Salud y bienestar</label>
+        <label><input type="checkbox" name="categorias[]" value="Belleza"> Belleza y estética</label>
+        <label><input type="checkbox" name="categorias[]" value="Educación"> Educación o formación</label>
+        <label><input type="checkbox" name="categorias[]" value="Gastronomía"> Gastronomía</label>
+        <label><input type="checkbox" name="categorias[]" value="Arte"> Arte y creatividad</label>
+        <label><input type="checkbox" name="categorias[]" value="Eventos"> Eventos y entretenimiento</label>
+        <label><input type="checkbox" name="categorias[]" value="Turismo"> Turismo y alojamiento</label>
+        <label><input type="checkbox" name="categorias[]" value="Tecnología"> Tecnología / Software / Aplicaciones</label>
+        <label><input type="checkbox" name="categorias[]" value="ONG"> ONG / Proyecto social o comunitario</label>
+        <label><input type="checkbox" name="categorias[]" value="Marca personal"> Marca personal / Influencer / Creador de contenido</label>
+        <label><input type="checkbox" name="categorias[]" value="Otro"> Otro</label>
       </div>
 
       <div class="form-group full-width">
