@@ -3,212 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario Briefing Web</title>
+  <title>¡Gracias por tu mensaje!</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+      background: linear-gradient(to right, #d3cce3, #e9e4f0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
     }
     h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 40px;
+      color: #2ecc71;
     }
-    .section {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease-in-out;
+    p {
+      font-size: 18px;
+      margin: 20px 0;
     }
-    .section:hover {
-      transform: scale(1.01);
-    }
-    h2, h3 {
-      color: #34495e;
-    }
-    label {
-      display: block;
-      margin: 10px 0;
-      font-size: 15px;
-      color: #2c3e50;
-    }
-    textarea, input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-top: 5px;
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-      transform: scale(1.1);
-    }
-    .checkbox-group {
+    a {
+      display: inline-block;
       margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
-    }
-    button {
-      background-color: #2980b9;
+      padding: 12px 24px;
+      background-color: #3498db;
       color: white;
-      font-size: 16px;
-      padding: 15px 25px;
-      border: none;
+      text-decoration: none;
       border-radius: 10px;
-      cursor: pointer;
-      display: block;
-      margin: 40px auto 0;
       transition: background-color 0.3s ease;
     }
-    button:hover {
-      background-color: #1f618d;
+    a:hover {
+      background-color: #2c80b4;
     }
   </style>
 </head>
 <body>
-
-  <h1>Formulario de Briefing para Página Web</h1>
-
-  <!-- SECCIONES -->
-  <form>
-    <div class="section">
-      <h2>1. ¿A qué se dedica tu negocio o proyecto?</h2>
-      <label for="descripcion">Descripción breve:</label>
-      <textarea id="descripcion" rows="4" placeholder="Escribe aquí..."></textarea>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Comercio / Tienda</label>
-        <label><input type="checkbox"> Servicios profesionales</label>
-        <label><input type="checkbox"> Salud y bienestar</label>
-        <label><input type="checkbox"> Belleza y estética</label>
-        <label><input type="checkbox"> Educación / Formación</label>
-        <label><input type="checkbox"> Gastronomía</label>
-        <label><input type="checkbox"> Arte y creatividad</label>
-        <label><input type="checkbox"> Eventos y entretenimiento</label>
-        <label><input type="checkbox"> Turismo / Alojamiento</label>
-        <label><input type="checkbox"> Tecnología / Software</label>
-        <label><input type="checkbox"> ONG / Proyecto social</label>
-        <label><input type="checkbox"> Marca personal / Influencer</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>2. ¿Qué quieres lograr con tu página web?</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Vender productos o servicios</label>
-        <label><input type="checkbox"> Mostrar información del negocio</label>
-        <label><input type="checkbox"> Generar clientes potenciales</label>
-        <label><input type="checkbox"> Recibir solicitudes de contacto</label>
-        <label><input type="checkbox"> Agendar citas o reservas</label>
-        <label><input type="checkbox"> Mostrar portafolio</label>
-        <label><input type="checkbox"> Compartir contenido / Blog</label>
-        <label><input type="checkbox"> Crear una comunidad</label>
-        <label><input type="checkbox"> Ofrecer cursos o talleres</label>
-        <label><input type="checkbox"> Monetizar con publicidad</label>
-        <label><input type="checkbox"> Recibir donaciones</label>
-        <label><input type="checkbox"> Promocionar un evento</label>
-        <label><input type="checkbox"> Posicionamiento SEO</label>
-        <label><input type="checkbox"> Validar una idea de negocio</label>
-        <label><input type="checkbox"> Brindar soporte al cliente</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>3. ¿Qué te gustaría que hicieran los visitantes en tu web?</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Escribirme por formulario</label>
-        <label><input type="checkbox"> Comprar o contratar</label>
-        <label><input type="checkbox"> Llamarme o enviar WhatsApp</label>
-        <label><input type="checkbox"> Registrarse o crear cuenta</label>
-        <label><input type="checkbox"> Suscribirse a newsletter</label>
-        <label><input type="checkbox"> Agendar cita</label>
-        <label><input type="checkbox"> Descargar recursos</label>
-        <label><input type="checkbox"> Ver portafolio</label>
-        <label><input type="checkbox"> Seguirme en redes</label>
-        <label><input type="checkbox"> Ver un video o presentación</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>4. ¿Qué secciones quieres que tenga tu web?</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Inicio</label>
-        <label><input type="checkbox"> Nosotros / Sobre mí</label>
-        <label><input type="checkbox"> Servicios</label>
-        <label><input type="checkbox"> Portafolio</label>
-        <label><input type="checkbox"> Tienda</label>
-        <label><input type="checkbox"> Galería</label>
-        <label><input type="checkbox"> Testimonios</label>
-        <label><input type="checkbox"> Blog / Novedades</label>
-        <label><input type="checkbox"> Preguntas frecuentes</label>
-        <label><input type="checkbox"> Contacto</label>
-        <label><input type="checkbox"> Agenda / Reserva</label>
-        <label><input type="checkbox"> Descargas</label>
-        <label><input type="checkbox"> Área privada / Login</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>5. ¿Ya tienes los textos, imágenes y logotipo?</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Textos</label>
-        <label><input type="checkbox"> Imágenes</label>
-        <label><input type="checkbox"> Logotipo</label>
-        <label><input type="checkbox"> Colores o estilo de marca</label>
-        <label><input type="checkbox"> Redes sociales activas</label>
-        <label><input type="checkbox"> Dominio web</label>
-        <label><input type="checkbox"> Hosting contratado</label>
-        <h3>¿Necesitas ayuda con algo?</h3>
-        <label><input type="checkbox"> Redacción de textos</label>
-        <label><input type="checkbox"> Fotografías o imágenes</label>
-        <label><input type="checkbox"> Diseño de logotipo</label>
-        <label><input type="checkbox"> Identidad visual / branding</label>
-        <label><input type="checkbox"> Dominio y hosting</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>6. Funcionalidades</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Formulario de contacto</label>
-        <label><input type="checkbox"> WhatsApp</label>
-        <label><input type="checkbox"> Mapa de ubicación</label>
-        <label><input type="checkbox"> Blog o sección de noticias</label>
-        <label><input type="checkbox"> Tienda online / carrito</label>
-        <label><input type="checkbox"> Reservas o citas</label>
-        <label><input type="checkbox"> Galería de imágenes</label>
-        <label><input type="checkbox"> Área privada / Login</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>7. Extras</h2>
-      <div class="checkbox-group">
-        <label><input type="checkbox"> Posicionamiento en Google (SEO)</label>
-        <label><input type="checkbox"> Google Analytics</label>
-        <label><input type="checkbox"> Traducción a varios idiomas</label>
-        <label><input type="checkbox"> Correos corporativos</label>
-        <label><input type="checkbox"> Certificado SSL (HTTPS)</label>
-        <label><input type="checkbox"> Optimización de velocidad</label>
-        <label><input type="checkbox"> Mantenimiento web</label>
-        <label><input type="checkbox"> Otro: <input type="text" placeholder="Especifica"></label>
-      </div>
-    </div>
-
-    <button type="submit">Enviar formulario</button>
-  </form>
-
+  <div class="container">
+    <h1>¡Gracias por tu envío!</h1>
+    <p>Hemos recibido tu briefing. Te contactaremos pronto para avanzar con tu proyecto.</p>
+    <a href="index.html">Volver al inicio</a>
+  </div>
 </body>
 </html>
