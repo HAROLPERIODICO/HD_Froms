@@ -15,20 +15,26 @@
     }
     .form-container {
       background: white;
-      border-radius: 16px;
-      padding: 30px;
+      border-radius: 20px;
+      padding: 40px;
       margin: auto;
       max-width: 900px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      animation: fadeIn 0.3s ease-in-out;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     h1 {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
     }
     form {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 24px;
       text-align: left;
     }
     .form-group {
@@ -38,18 +44,25 @@
     .form-group textarea,
     .form-group select {
       width: 100%;
-      padding: 12px 12px 12px 12px;
+      padding: 16px 12px 16px 12px;
       font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 12px;
       background: none;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #3498db;
     }
     .form-group label {
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 14px;
+      left: 16px;
       font-size: 14px;
-      color: #888;
+      color: #999;
       background: white;
       padding: 0 5px;
       transition: 0.2s;
@@ -61,15 +74,15 @@
     .form-group textarea:not(:placeholder-shown) + label,
     .form-group select:focus + label,
     .form-group select:not([value=""]):valid + label {
-      top: -8px;
-      left: 10px;
+      top: -10px;
+      left: 12px;
       background: white;
       font-size: 12px;
       color: #3498db;
     }
     .form-group textarea {
       resize: vertical;
-      min-height: 80px;
+      min-height: 100px;
     }
     .full-width {
       grid-column: 1 / -1;
@@ -78,11 +91,12 @@
       background-color: #2ecc71;
       color: white;
       font-size: 18px;
-      padding: 12px;
+      padding: 14px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
       grid-column: 1 / -1;
+      transition: background-color 0.3s;
     }
     button[type="submit"]:hover {
       background-color: #27ae60;
