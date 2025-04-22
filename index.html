@@ -105,10 +105,24 @@
     button[type="submit"]:hover {
       background-color: #8e44ad;
     }
+    .checkbox-group {
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #e0e0e0;
+      background-color: #f9f9f9;
+    }
+    .checkbox-group legend {
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+      font-size: 16px;
+      color: #333;
+    }
     .checkbox-group label {
       display: block;
-      margin-bottom: 5px;
+      margin: 5px 0;
       font-weight: 400;
+      font-size: 15px;
     }
   </style>
 </head>
@@ -116,7 +130,7 @@
 
   <div class="form-container">
     <h1>Formulario de Briefing para Página Web</h1>
-    <form id="briefingForm" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
+    <form id="briefingForm" action="https://formsubmit.co/disenodigital@artemicreativa.com" method="POST">
       <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
       <input type="hidden" name="_subject" value="Nuevo Briefing Web">
 
@@ -135,8 +149,8 @@
         <label for="dedicacion">🧭 ¿A qué se dedica tu negocio o proyecto? Describe brevemente tu actividad.</label>
       </div>
 
-      <div class="form-group full-width checkbox-group">
-        <label>Selecciona una o varias categorías:</label>
+      <fieldset class="form-group full-width checkbox-group">
+        <legend>Selecciona una o varias categorías:</legend>
         <label><input type="checkbox" name="categorias[]" value="Comercio"> Comercio / Tienda física o en línea</label>
         <label><input type="checkbox" name="categorias[]" value="Servicios profesionales"> Servicios profesionales</label>
         <label><input type="checkbox" name="categorias[]" value="Salud"> Salud y bienestar</label>
@@ -150,7 +164,7 @@
         <label><input type="checkbox" name="categorias[]" value="ONG"> ONG / Proyecto social o comunitario</label>
         <label><input type="checkbox" name="categorias[]" value="Marca personal"> Marca personal / Influencer / Creador de contenido</label>
         <label><input type="checkbox" name="categorias[]" value="Otro"> Otro</label>
-      </div>
+      </fieldset>
 
       <div class="form-group full-width">
         <textarea id="objetivo" name="objetivo" rows="3" placeholder=" "></textarea>
