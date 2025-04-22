@@ -8,10 +8,11 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
       padding: 40px 20px;
       margin: auto;
       text-align: center;
+      color: #333;
     }
     .form-container {
       background: white;
@@ -19,17 +20,19 @@
       padding: 40px;
       margin: auto;
       max-width: 900px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      animation: fadeIn 0.5s ease-in-out;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.7s ease-in-out;
     }
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
     h1 {
-      margin-bottom: 30px;
-      font-size: 28px;
-      color: #333;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #2c3e50;
+      font-weight: 600;
+      text-transform: uppercase;
     }
     form {
       display: grid;
@@ -44,62 +47,74 @@
     .form-group textarea,
     .form-group select {
       width: 100%;
-      padding: 16px 12px 16px 12px;
+      padding: 18px 16px;
       font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      background: none;
+      border: 1px solid #e0e0e0;
+      border-radius: 15px;
+      background: #f9f9f9;
       outline: none;
-      transition: border-color 0.3s;
+      transition: all 0.3s ease;
     }
     .form-group input:focus,
     .form-group textarea:focus,
     .form-group select:focus {
-      border-color: #3498db;
+      border-color: #9b59b6;
+      box-shadow: 0 0 10px rgba(155, 89, 182, 0.4);
     }
     .form-group label {
       position: absolute;
-      top: 14px;
-      left: 16px;
+      top: 18px;
+      left: 18px;
       font-size: 14px;
       color: #999;
       background: white;
       padding: 0 5px;
-      transition: 0.2s;
+      transition: 0.3s ease;
       pointer-events: none;
     }
     .form-group input:focus + label,
-    .form-group input:not(:placeholder-shown) + label,
     .form-group textarea:focus + label,
-    .form-group textarea:not(:placeholder-shown) + label,
     .form-group select:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:not(:placeholder-shown) + label,
     .form-group select:not([value=""]):valid + label {
-      top: -10px;
+      top: -12px;
       left: 12px;
-      background: white;
       font-size: 12px;
-      color: #3498db;
+      color: #9b59b6;
     }
     .form-group textarea {
       resize: vertical;
-      min-height: 100px;
+      min-height: 120px;
     }
     .full-width {
       grid-column: 1 / -1;
     }
     button[type="submit"] {
-      background-color: #2ecc71;
+      background-color: #9b59b6;
       color: white;
       font-size: 18px;
-      padding: 14px;
+      padding: 16px 30px;
       border: none;
-      border-radius: 12px;
+      border-radius: 20px;
       cursor: pointer;
       grid-column: 1 / -1;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
+      letter-spacing: 1px;
     }
     button[type="submit"]:hover {
-      background-color: #27ae60;
+      background-color: #8e44ad;
+    }
+    select[multiple] {
+      height: auto;
+      padding: 12px 16px;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      border: 1px solid #e0e0e0;
+    }
+    select[multiple]:focus {
+      border-color: #9b59b6;
+      box-shadow: 0 0 10px rgba(155, 89, 182, 0.4);
     }
   </style>
 </head>
@@ -177,3 +192,4 @@
 
 </body>
 </html>
+
