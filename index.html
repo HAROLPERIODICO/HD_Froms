@@ -25,7 +25,7 @@
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #a18cd1, #fbc2eb);
-      padding: 40px 40px;
+      padding: 20px 20px;
       margin: auto;
       text-align: center;
       color: #333;
@@ -147,17 +147,18 @@
   <div class="form-container">
     <h1>Formulario de Briefing para Página Web</h1>
     <form id="briefingForm" action="https://formsubmit.co/disenodigital@artemicreativa.com" method="POST">
-      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <input type="hidden" name="_next" value="aroldiazmelendez@gmail.com">
       <input type="hidden" name="_subject" value="Nuevo Briefing Web">
 
       <div class="form-group">
         <input type      <div class="form-group">
         <input type="text" id="nombre" name="nombre" required placeholder=" ">
         <label for="nombre">Nombre personal</label>
-      </div>="text" id="nombre" name="nombre" required placeholder=" ">
+        /*
+     </div>="text" id="nombre" name="nombre" required placeholder=" ">
         <label for="nombre">Nombre</label>
-      </div>
-
+     </div>
+        */
       <div class="form-group">
         <input type="email" id="email" name="email" required placeholder=" ">
         <label for="email">Correo electrónico personal</label>
@@ -168,22 +169,7 @@
         <label for="dedicacion">🧭 ¿A qué se dedica tu negocio o proyecto? Describe brevemente tu actividad.</label>
       </div>
 
-      <fieldset class="form-group full-width checkbox-group">
-        <legend>Selecciona una o varias categorías:</legend>
-        <label><input type="checkbox" name="categorias[]" value="Comercio"> Comercio / Tienda física o en línea</label>
-        <label><input type="checkbox" name="categorias[]" value="Servicios profesionales"> Servicios profesionales</label>
-        <label><input type="checkbox" name="categorias[]" value="Salud"> Salud y bienestar</label>
-        <label><input type="checkbox" name="categorias[]" value="Belleza"> Belleza y estética</label>
-        <label><input type="checkbox" name="categorias[]" value="Educación"> Educación o formación</label>
-        <label><input type="checkbox" name="categorias[]" value="Gastronomía"> Gastronomía</label>
-        <label><input type="checkbox" name="categorias[]" value="Arte"> Arte y creatividad</label>
-        <label><input type="checkbox" name="categorias[]" value="Eventos"> Eventos y entretenimiento</label>
-        <label><input type="checkbox" name="categorias[]" value="Turismo"> Turismo y alojamiento</label>
-        <label><input type="checkbox" name="categorias[]" value="Tecnología"> Tecnología / Software / Aplicaciones</label>
-        <label><input type="checkbox" name="categorias[]" value="ONG"> ONG / Proyecto social o comunitario</label>
-        <label><input type="checkbox" name="categorias[]" value="Marca personal"> Marca personal / Influencer / Creador de contenido</label>
-        <label><input type="checkbox" name="categorias[]" value="Otro"> Otro</label>
-      </fieldset>
+      
 
       <div class="form-group full-width">
         <select id="actividad" name="actividad" multiple>
