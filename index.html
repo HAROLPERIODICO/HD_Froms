@@ -50,6 +50,14 @@
       font-weight: 600;
       text-transform: uppercase;
     }
+
+        h3 {
+      margin-bottom: 40px;
+      font-size: 16px;
+      color: #2c3e50;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
     form {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -156,6 +164,7 @@
 
   <div class="form-container">
     <h1>Formulario de Briefing para Página Web</h1>
+    <h3>Selecciona todas las que consideres necesarias</h3>
     <form id="briefingForm" action="https://formsubmit.co/disenodigital@artemicreativa.com" method="POST">
       <input type="hidden" name="_next" value="haroldiazmelendez@gmail.com">
       <input type="hidden" name="_subject" value="Nuevo Briefing Web">
@@ -194,8 +203,54 @@
           <option>📧 Marca personal / Influencer / Creador de contenido</option>          
           <option>Otro</option>
         </select>
-        <label for="actividad">🛠️ Funcionalidades
-                 Marca lo que necesitas (puedes tachar o dejar solo lo que aplique)</label>
+        <label for="actividad">🧭 ¿A qué se dedica tu empresa, negocio o proyecto?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <select id="objetivos" name="actividad" multiple>
+          <option>🛒 Vender productos o servicios en línea (e-commerce)</option>
+          <option>👔 Generar prospectos o clientes potenciales (leads)</option>
+          <option>☎️ Recibir solicitudes de contacto o cotización</option>
+          <option>📆 Agendar citas, reservas o consultas</option>
+          <option>📋 Presentar tu portafolio de trabajos o proyectos</option>
+          <option>🎥 Compartir contenido (blog, noticias, artículos, recursos)</option>
+          <option>Crear una comunidad (foro, membresía, grupo exclusivo, etc.)</option>
+          <option>Ofrecer cursos, talleres o contenido educativo</option>
+          <option>Monetizar a través de publicidad o contenido patrocinado</option>
+          <option>Recibir donaciones o apoyo económico</option>
+          <option>Promocionar un evento, campaña o lanzamiento</option>
+          <option>Mejorar tu presencia digital y posicionamiento en buscadores</option>          
+          <option>Validar una idea de negocio o producto (landing page)</option>
+          <option>Brindar soporte o atención al cliente</option>
+          <option>Mostrar mis servicios o catálogo</option>
+          <option>Otro)</option>
+          <option>Otro)</option>
+          <option>Otro)</option>
+        </select>
+        <label for="objetivos">🎯 ¿Qué te gustaría lograr con tu página web?</label>
+      </div>
+      
+      <div class="form-group full-width">
+        <select id="actividad" name="actividad" multiple>
+          <option>⏱️ Inicio – Resumen general, presentación y llamada a la acción</option>
+          <option>Nosotros / Sobre mí – Historia, misión, valores, equipo</option>
+          <option>Servicios / Qué ofrezco – Detalle de los servicios o productos</option>
+          <option>Portafolio / Proyectos – Trabajos anteriores, casos de éxito</option>
+          <option>Tienda / Catálogo – Productos para venta en línea</option>
+          <option>Galería – Imágenes o videos destacados</option>
+          <option>Testimonios – Opiniones de clientes o usuarios</option>
+          <option>Blog / Novedades – Artículos, noticias, recursos o consejos</option>
+          <option>FAQs / Preguntas frecuentes – Respuestas rápidas a dudas comunes</option>
+          <option>Contacto – Formulario, ubicación, redes sociales, WhatsApp</option>
+          <option>Agenda / Reserva – Sistema de citas, reservas o calendario</option>
+          <option>Descargas / Recursos – Material gratuito o exclusivo</option>          
+          <option>Área privada / Login – Para usuarios registrados o clientes</option>
+          <option>Menú digital</option>
+          <option>Mapa interactivo</option>
+          <option>Calculadora</option>
+          <option>Otro</option>
+        </select>
+        <label for="actividad">🧩 ¿Qué secciones te gustaría que tenga tu página web?</label>
       </div>
 
         <div class="form-group full-width">
@@ -209,10 +264,8 @@
           <option>✅ Hosting contratado (el espacio donde se aloja la web)</option>     
           <option>✅ Ninguna</option>
         </select>
-        <label for="diseño">🗂️ ¿Ya cuentas con el contenido necesario para tu página web?
-                  Marca las opciones que ya tienes listas</label>
+        <label for="diseño">🗂️ ¿Ya cuentas con el contenido necesario para tu página web?</label>
       </div>
-
 
       <div class="form-group full-width">
         <select id="necesitas" name="necesitas" multiple>
@@ -242,8 +295,7 @@
           <option>📧 Suscripción a newsletter – Recolección de correos para email marketing</option>          
           <option>Otro</option>
         </select>
-        <label for="funcionalidades">🛠️ Funcionalidades
-                 Marca lo que necesitas (puedes tachar o dejar solo lo que aplique)</label>
+        <label for="funcionalidades">🛠️ ¿Qué funcionalidades te gustaría que tenga tu página web?</label>
       </div>
 
       <div class="form-group full-width">
@@ -258,8 +310,7 @@
           <option>🖼️ Ninguno</option>
           <option>Otro</option>
         </select>
-        <label for="extras">🔍 Extras 📌 ¿Te interesa agregar alguno de estos servicios complementarios a tu sitio web?
-                  Selecciona los que te interesen o consideres necesarios:</label>
+        <label for="extras">🔍 Extras 📌 ¿Te interesa agregar alguno de estos servicios complementarios a tu sitio web?</label>
       </div>
 
       <button type="submit">Enviar</button>
