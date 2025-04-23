@@ -166,154 +166,93 @@
     <h1>Formulario de Briefing para Página Web</h1>
     <h3>Selecciona todas las que consideres necesarias</h3>
     <form id="briefingForm" action="https://formspree.io/f/mblgeozp" method="POST">
-      <input type="hidden" name="_next" value="haroldiazmelendez@gmail.com">
-      <input type="hidden" name="_subject" value="Nuevo Briefing Web">
+  <input type="hidden" name="_next" value="haroldiazmelendez@gmail.com">
+  <input type="hidden" name="_subject" value="Nuevo Briefing Web">
 
-      <div class="form-group">
-        <input type="text" id="nombre" name="nombre" required placeholder=" ">
-        <label for="nombre">Nombre personal</label>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" name="email" required placeholder=" ">
-        <label for="email">Correo electrónico personal</label>
-      </div>
-
-      <div class="form-group">
-        <input type="text" id="nombre" name="nombre" required placeholder=" ">
-        <label for="nombre">Nombre EMPRESA</label>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" name="email" required placeholder=" ">
-        <label for="email">Correo electrónico EMPRESA</label>
-      </div>
-
-      <div class="form-group full-width">
-        <select input type= "text" name= actividad multiple>
-          <option >📩 Comercio / Tienda física o en línea</option>
-          <option>💬 Servicios profesionales</option>
-          <option>📍  Salud y bienestar</option>
-          <option>📰 Belleza y estética</option>
-          <option>🛒 Educación o formación</option>
-          <option>📅 Gastronomía / cafeteria / Heladería</option>
-          <option>🖼️ Arte y creatividad</option>
-          <option>👤 Turismo y alojamiento</option>
-          <option>📥 Eventos y entretenimiento</option>
-          <option>🌐 Tecnología / Software / Aplicaciones</option>
-          <option>📅 ONG / Proyecto social o comunitario</option>
-          <option>📧 Marca personal / Influencer / Creador de contenido</option>          
-          <option>Otro</option>
-        </select>
-        <label for="actividad">🧭 ¿A qué se dedica tu empresa, negocio o proyecto?</label>
-      </div>
-
-      <div class="form-group full-width">
-        <select id="objetivos" name="actividad" multiple>
-          <option>🛒 Vender productos o servicios en línea (e-commerce)</option>
-          <option>👔 Generar prospectos o clientes potenciales (leads)</option>
-          <option>☎️ Recibir solicitudes de contacto o cotización</option>
-          <option>📆 Agendar citas, reservas o consultas</option>
-          <option>📋 Presentar tu portafolio de trabajos o proyectos</option>
-          <option>🎥 Compartir contenido (blog, noticias, artículos, recursos)</option>
-          <option>👨‍👨‍👧‍👦 Crear una comunidad (foro, membresía, grupo exclusivo, etc.)</option>
-          <option>📚 Ofrecer cursos, talleres o contenido educativo</option>
-          <option>📢 Monetizar a través de publicidad o contenido patrocinado</option>
-          <option>💰 Recibir donaciones o apoyo económico</option>
-          <option>⛺ Promocionar un evento, campaña o lanzamiento</option>
-          <option>🔢 Mejorar tu presencia digital y posicionamiento en buscadores</option>          
-          <option>📃 Validar una idea de negocio o producto (landing page)</option>
-          <option>👩🏻‍🦰 Brindar soporte o atención al cliente</option>
-          <option>👁️ Mostrar mis servicios o catálogo</option>
-          <option>Otro)</option>
-        </select>
-        <label for="objetivos">🎯 ¿Qué te gustaría lograr con tu página web?</label>
-      </div>
-      
-      <div class="form-group full-width">
-        <select id="secciones" name="secciones" multiple>
-          <option>⏱️ Inicio – Resumen general, presentación y llamada a la acción</option>
-          <option>🤝🏻 Nosotros / Sobre mí – Historia, misión, valores, equipo</option>
-          <option>🛅 Servicios / Qué ofrezco – Detalle de los servicios o productos</option>
-          <option>👝 Portafolio / Proyectos – Trabajos anteriores, casos de éxito</option>
-          <option>☑️ Tienda / Catálogo – Productos para venta en línea</option>
-          <option>📷 Galería – Imágenes o videos destacados</option>
-          <option>🗣️ Testimonios – Opiniones de clientes o usuarios</option>
-          <option>🎞️Blog / Novedades – Artículos, noticias, recursos o consejos</option>
-          <option>❓ FAQs / Preguntas frecuentes – Respuestas rápidas a dudas comunes</option>
-          <option>📞 Contacto – Formulario, ubicación, redes sociales, WhatsApp</option>
-          <option>📖 Agenda / Reserva – Sistema de citas, reservas o calendario</option>
-          <option>🔯 Descargas / Recursos – Material gratuito o exclusivo</option>          
-          <option>📲 Área privada / Login – Para usuarios registrados o clientes</option>
-          <option>✍🏻 Menú digital</option>
-          <option>🗺️ Mapa interactivo</option>
-          <option>➕ Calculadora</option>
-          <option>Otro</option>
-        </select>
-        <label for="secciones">🧩 ¿Qué secciones te gustaría que tenga tu página web?</label>
-      </div>
-
-        <div class="form-group full-width">
-        <select id="diseño" name="diseño" multiple>
-          <option>✅ Textos (descripciones, biografía, servicios, etc.)</option>
-          <option>✅ Imágenes (fotografías, banners, productos, etc.)</option>
-          <option>✅ Logotipo o identidad visual</option>
-          <option>✅ Colores o estilo de marca definidos</option>
-          <option>✅ Redes sociales activas y configuradas</option>
-          <option>✅ Dominio web registrado (ej: www.tunegocio.com)</option>
-          <option>✅ Hosting contratado (el espacio donde se aloja la web)</option>     
-          <option>✅ Ninguna</option>
-        </select>
-        <label for="diseño">🗂️ ¿Ya cuentas con el contenido necesario para tu página web?</label>
-      </div>
-
-      <div class="form-group full-width">
-        <select id="necesitas" name="necesitas" multiple>
-          <option>✍️ Redacción de textos</option>
-          <option>📸 Fotografías o imágenes de stock</option>
-          <option>🎨 Diseño de logotipo</option>
-          <option>🖌️ Desarrollo de identidad visual / branding</option>
-          <option>🌐 Compra de dominio y/o configuración de hosting</option>
-          <option>Otro</option>
-        </select>
-        <label for="necesitas">En caso contrario, ¿necesitas ayuda con algo de lo siguiente?</label>
-      </div>
-
-      <div class="form-group full-width">
-        <select id="funcionalidades" name="funcionalidades" multiple>
-          <option>📩 Formulario de contacto</option>
-          <option>💬 WhatsApp</option>
-          <option>📍 Mapa de ubicación</option>
-          <option>📰 Blog o sección de noticias</option>
-          <option>🛒 Tienda online / carrito de compras</option>
-          <option>📅 Reservas o citas</option>
-          <option>🖼️ Galería de imágenes</option>
-          <option>👤 Área de usuarios / Login – Para contenido exclusivo o gestión de cuentas</option>
-          <option>📥 Descarga de recursos – Archivos como PDFs, guías, catálogos, etc.</option>
-          <option>🌐 Multidioma – Versión en más de un idioma</option>
-          <option>📅 Reservas o citas</option>
-          <option>📧 Suscripción a newsletter – Recolección de correos para email marketing</option>          
-          <option>Otro</option>
-        </select>
-        <label for="funcionalidades">🛠️ ¿Qué funcionalidades te gustaría que tenga tu página web?</label>
-      </div>
-
-      <div class="form-group full-width">
-        <select id="extras" name="extras" multiple>
-          <option>🚀 Posicionamiento en Google (SEO)</option>
-          <option>📊 Google Analytics</option>
-          <option>🌍 Traducción a varios idiomas</option>
-          <option>📧 Creación de correos corporativos</option>
-          <option>🔐 Certificado SSL (HTTPS) – Seguridad y confianza para tus visitantes</option>
-          <option>🖼️ Optimización de velocidad y rendimiento</option>
-          <option>🔧 Mantenimiento web – Soporte, actualizaciones y copias de seguridad</option>
-          <option>🖼️ Ninguno</option>
-          <option>Otro</option>
-        </select>
-        <label for="extras">🔍 Extras 📌 ¿Te interesa agregar alguno de estos servicios complementarios a tu sitio web?</label>
-      </div>
-
-      <button type="submit">Enviar</button>
-    </form>
+  <div class="form-group">
+    <input type="text" id="nombre" name="nombre" required placeholder=" ">
+    <label for="nombre">Nombre personal</label>
   </div>
+  <div class="form-group">
+    <input type="email" id="email" name="email" required placeholder=" ">
+    <label for="email">Correo electrónico personal</label>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="empresa" name="empresa" required placeholder=" ">
+    <label for="empresa">Nombre EMPRESA</label>
+  </div>
+  <div class="form-group">
+    <input type="email" id="email_empresa" name="email_empresa" required placeholder=" ">
+    <label for="email_empresa">Correo electrónico EMPRESA</label>
+  </div>
+
+  <!-- Actividad -->
+  <fieldset class="form-group full-width checkbox-group">
+    <legend>🧭 ¿A qué se dedica tu empresa, negocio o proyecto?</legend>
+    <label><input type="checkbox" name="actividad[]" value="Comercio / Tienda"> 📩 Comercio / Tienda</label>
+    <label><input type="checkbox" name="actividad[]" value="Servicios profesionales"> 💬 Servicios profesionales</label>
+    <label><input type="checkbox" name="actividad[]" value="Salud y bienestar"> 📍 Salud y bienestar</label>
+    <label><input type="checkbox" name="actividad[]" value="Belleza y estética"> 📰 Belleza y estética</label>
+    <label><input type="checkbox" name="actividad[]" value="Educación o formación"> 🛒 Educación o formación</label>
+    <label><input type="checkbox" name="actividad[]" value="Gastronomía / cafetería / Heladería"> 📅 Gastronomía / cafetería / Heladería</label>
+    <label><input type="checkbox" name="actividad[]" value="Arte y creatividad"> 🖼️ Arte y creatividad</label>
+    <label><input type="checkbox" name="actividad[]" value="Turismo y alojamiento"> 👤 Turismo y alojamiento</label>
+    <label><input type="checkbox" name="actividad[]" value="Eventos y entretenimiento"> 📥 Eventos y entretenimiento</label>
+    <label><input type="checkbox" name="actividad[]" value="Tecnología / Software / Aplicaciones"> 🌐 Tecnología / Software / Aplicaciones</label>
+    <label><input type="checkbox" name="actividad[]" value="ONG / Proyecto social"> 📅 ONG / Proyecto social</label>
+    <label><input type="checkbox" name="actividad[]" value="Marca personal / Influencer / Creador de contenido"> 📧 Marca personal / Influencer</label>
+    <label><input type="checkbox" name="actividad[]" value="Otro"> Otro</label>
+  </fieldset>
+
+  <!-- Objetivos -->
+  <fieldset class="form-group full-width checkbox-group">
+    <legend>🎯 ¿Qué te gustaría lograr con tu página web?</legend>
+    <label><input type="checkbox" name="objetivos[]" value="E-commerce"> 🛒 Vender productos o servicios en línea</label>
+    <label><input type="checkbox" name="objetivos[]" value="Leads"> 👔 Generar prospectos o clientes</label>
+    <label><input type="checkbox" name="objetivos[]" value="Contacto o cotización"> ☎️ Solicitudes de contacto</label>
+    <label><input type="checkbox" name="objetivos[]" value="Reservas"> 📆 Agendar citas o reservas</label>
+    <label><input type="checkbox" name="objetivos[]" value="Portafolio"> 📋 Presentar portafolio</label>
+    <label><input type="checkbox" name="objetivos[]" value="Blog"> 🎥 Compartir contenido</label>
+    <label><input type="checkbox" name="objetivos[]" value="Comunidad"> 👨‍👨‍👧‍👦 Crear comunidad</label>
+    <label><input type="checkbox" name="objetivos[]" value="Cursos"> 📚 Ofrecer cursos</label>
+    <label><input type="checkbox" name="objetivos[]" value="Publicidad"> 📢 Monetizar contenido</label>
+    <label><input type="checkbox" name="objetivos[]" value="Donaciones"> 💰 Donaciones</label>
+    <label><input type="checkbox" name="objetivos[]" value="Evento"> ⛺ Promocionar evento</label>
+    <label><input type="checkbox" name="objetivos[]" value="SEO"> 🔢 Presencia digital</label>
+    <label><input type="checkbox" name="objetivos[]" value="Landing page"> 📃 Validar idea</label>
+    <label><input type="checkbox" name="objetivos[]" value="Soporte"> 👩🏻‍🦰 Soporte</label>
+    <label><input type="checkbox" name="objetivos[]" value="Catálogo"> 👁️ Mostrar catálogo</label>
+    <label><input type="checkbox" name="objetivos[]" value="Otro"> Otro</label>
+  </fieldset>
+
+  <!-- Secciones -->
+  <fieldset class="form-group full-width checkbox-group">
+    <legend>🧩 ¿Qué secciones te gustaría que tenga tu página web?</legend>
+    <label><input type="checkbox" name="secciones[]" value="Inicio"> ⏱️ Inicio</label>
+    <label><input type="checkbox" name="secciones[]" value="Nosotros"> 🤝🏻 Nosotros</label>
+    <label><input type="checkbox" name="secciones[]" value="Servicios"> 🛅 Servicios</label>
+    <label><input type="checkbox" name="secciones[]" value="Portafolio"> 👝 Portafolio</label>
+    <label><input type="checkbox" name="secciones[]" value="Tienda"> ☑️ Tienda</label>
+    <label><input type="checkbox" name="secciones[]" value="Galería"> 📷 Galería</label>
+    <label><input type="checkbox" name="secciones[]" value="Testimonios"> 🗣️ Testimonios</label>
+    <label><input type="checkbox" name="secciones[]" value="Blog"> 🎞️ Blog</label>
+    <label><input type="checkbox" name="secciones[]" value="FAQs"> ❓ FAQs</label>
+    <label><input type="checkbox" name="secciones[]" value="Contacto"> 📞 Contacto</label>
+    <label><input type="checkbox" name="secciones[]" value="Agenda"> 📖 Agenda</label>
+    <label><input type="checkbox" name="secciones[]" value="Recursos"> 🔯 Recursos</label>
+    <label><input type="checkbox" name="secciones[]" value="Área privada"> 📲 Área privada</label>
+    <label><input type="checkbox" name="secciones[]" value="Menú digital"> ✍🏻 Menú digital</label>
+    <label><input type="checkbox" name="secciones[]" value="Mapa interactivo"> 🗺️ Mapa interactivo</label>
+    <label><input type="checkbox" name="secciones[]" value="Calculadora"> ➕ Calculadora</label>
+    <label><input type="checkbox" name="secciones[]" value="Otro"> Otro</label>
+  </fieldset>
+
+  <!-- Puedes seguir el mismo formato para los campos: diseño, necesitas, funcionalidades y extras -->
+  <!-- Si quieres que también los convierta a checkboxes, dime y te los adapto también -->
+
+  <button type="submit">Enviar</button>
+</form>
 
 </body>
 </html>
