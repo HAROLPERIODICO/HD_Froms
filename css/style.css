@@ -30,7 +30,7 @@ body {
       padding: 40px;
       margin: auto;
       max-width: 600px;
-      max-height: 100px;
+      max-height: 80px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
       animation: fadeIn 0.7s ease-in-out;
     }
