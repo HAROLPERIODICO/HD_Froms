@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-:root {
-    --padding-container: 100px 0;
-    --color-title: #001A49;
-}
-
-    @keyframes fadeIn {
+@keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .body {
+
+  body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #a18cd1, #fbc2eb);
       padding: 20px 20px;
