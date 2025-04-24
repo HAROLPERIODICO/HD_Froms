@@ -50,7 +50,7 @@ body {
       text-transform: uppercase;
     }
 
-    form {
+    .form {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
