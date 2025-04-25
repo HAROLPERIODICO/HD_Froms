@@ -24,7 +24,7 @@ body {
       animation: fadeIn 0.7s ease-in-out;
     }
 
-    .form-web {
+    .form-web :hover {
       background: #8e44ad;
       border-radius: 20px;
       padding: 10px;
