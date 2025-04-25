@@ -123,7 +123,7 @@ body {
       resize: vertical;
       min-height: 120px;
     }
-    .from-grupp.full-width {
+    .from-grupp full-width {
 	height: 100%;
 	    
     }
@@ -184,7 +184,14 @@ body {
     }
 	*/
 
-
+body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      padding: 20px 20px;
+      margin: auto;
+      text-align: center;
+      color: #333;
+    } 
     .form-container {
       background: white;
       border-radius: 20px;
