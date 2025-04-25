@@ -130,7 +130,7 @@ body {
 
     .form-group textarea {
       resize: vertical;
-      min-height: 120px;
+      min-height: 220px;
     }
     .form-group full-width {
 	height: 100px;
