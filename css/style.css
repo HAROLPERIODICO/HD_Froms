@@ -132,7 +132,7 @@ body {
       min-height: 220px;
     }
     .form-group full-width {
-	height: 220px;
+	height: 520px;
 	    
     }
 
@@ -156,7 +156,7 @@ body {
     button[type="submit"]:hover {
       background-color: #8e44ad;
     }
-
+/*
     .checkbox-group {
       padding: 20px;
       border-radius: 15px;
@@ -178,7 +178,7 @@ body {
       font-size: 15px;
     }
 
-
+*/
 
 @media (max-width:800px){
    /* .hero__title{
