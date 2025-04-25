@@ -24,7 +24,7 @@ body {
       animation: fadeIn 0.7s ease-in-out;
     }
 
-    .form-web :hover {
+    .form-web {
       background: #8e44ad;
       border-radius: 20px;
       padding: 10px;
@@ -32,6 +32,10 @@ body {
       max-height: 100px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
       animation: fadeIn 0.7s ease-in-out;
+      cursor: pointer;
+      grid-column: 1 / -1;
+      transition: background-color 0.3s ease;
+      letter-spacing: 1px;
     }
 
     h1 {
