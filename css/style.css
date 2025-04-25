@@ -123,6 +123,10 @@ body {
       resize: vertical;
       min-height: 120px;
     }
+    .from-grupp.full-width {
+	height: 100%;
+	    
+    }
 
     .full-width {
       grid-column: 1 / -1;
