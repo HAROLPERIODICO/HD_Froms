@@ -25,10 +25,10 @@ body {
     }
 
     .form-web {
-      background: linear-gradient(to right, #a18cd3, #fbc2eb);
+      background: #a18cd3;
       border-radius: 20px;
       padding: 10px 0 10px;
-      margin: auto;
+      /*margin: auto;*/
       max-width: 600px;
       max-height: 100px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
