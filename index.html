@@ -37,11 +37,19 @@
       </div>
       <div class="form-group">
         <input type="text" id="nombre_empresa" name="nombre"  placeholder=" ">
-        <label for="nombre">Teléfono</label>
+        <label for="nombre" pattern="[0-9]{10}" 
+                        placeholder="Teléfono Ej: 5551234567" 
+                        required><br><br>Teléfono</label>
+                        
+      </div>
+
+
+                    <input type="tel" id="telefono" class="footer__input"  
                         pattern="[0-9]{10}" 
                         placeholder="Teléfono Ej: 5551234567" 
                         required><br><br>
-      </div>
+
+        
       <div class="form-group">
         <input type="email" id="email" name="email" required placeholder=" ">
         <label for="email">Correo electrónico</label>
